@@ -1,0 +1,34 @@
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'fontawesome/css/all.css' %}">
+
+</head>
+<body>
+    <header>
+        <nav class="navigation-desktop">
+            <div class="logo"><span>Hans</span>Temple</div>
+            <ul class="navigation-links">
+                <li class="navigation-links-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="navigation-links-item"><a href="#" class="nav-link">About</a></li>
+                <li class="navigation-links-item"><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %} {% endblock content %}
+    </main>
+    <footer>
+        <ul class="social-links">
+            <li class="social-links-item"><a href="#" class="nav-link"><i class="fab fa-2x fa-facebook"></i></a></li>
+            <li class="social-links-item"><a href="#" class="nav-link"><i class="fab fa-2x fa-instagram"></i></a></li>
+            <li class="social-links-item"><a href="#" class="nav-link"><i class="fab fa-2x fa-twitter"></i></a></li>
+        </ul>
+    </footer>
+</body>
+</html>

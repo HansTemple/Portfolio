@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Hans Temple || Home {% endblock title %}
+
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <section class="Landing-Page">
+        <div class="overflow">
+            <div class="information-animate">
+                {% comment %} <h1 class="typewriter">Creativity is intelligence, Having fun :) <span></span> </h1> {% endcomment %}
+                {% comment %} <h3>Web Developer</h3> {% endcomment %}
+            </div>
+        </div>
+        <div class="information-details">
+            <h3>Hi,</h3>
+            <h1>I am Hans Temple</h1>
+            <h2>I help people to design and develop quality Websites</h2>
+        </div>
+        <div class="social-links">
+            <ul class="social-links-contents">
+                <li class="social-links-item"></li>
+                <li class="social-links-item"></li>
+                <li class="social-links-item"></li>
+            </ul>
+        </div>
+    </section>
+{% endblock content %}
+    
